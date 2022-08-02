@@ -1,0 +1,207 @@
+POST /43002 HTTP/1.1
+Cache-Control: no-cache
+Connection: Keep-Alive
+Pragma: no-cache
+Transfer-Encoding: chunked
+Content-Type: Multipart/Related;boundary=421cf70c-d50c-49a4-8251-3123314d8caa-76e66ba6-2b2d-4dfd-b40a-d8f01ca0c;type="application/xop+xml";start="<soap@soap>";start-info="application/soap+xml"
+User-Agent: WSDAPI
+MIME-Version: 1.0
+Content-Description: WSDAPI MIME multipart
+Host: 192.168.31.221:43002
+
+d5
+--421cf70c-d50c-49a4-8251-3123314d8caa-76e66ba6-2b2d-4dfd-b40a-d8f01ca0c
+Content-Type: application/xop+xml;charset=UTF-8;type="application/soap+xml"
+Content-Transfer-Encoding: binary
+Content-ID: <soap@soap>
+
+
+46c
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:pri="http://schemas.microsoft.com/windows/2006/08/wdp/print" xmlns:xop="http://www.w3.org/2004/08/xop/include"><soap:Header><wsa:To>http://192.168.31.221:43002/43002</wsa:To><wsa:Action>http://schemas.microsoft.com/windows/2006/08/wdp/print/SendDocument</wsa:Action><wsa:MessageID>urn:uuid:d0e77d0e-b116-48fb-8140-781d3c9e9498</wsa:MessageID><wsa:ReplyTo><wsa:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:Address></wsa:ReplyTo><wsa:From><wsa:Address>urn:uuid:0b11ce88-386b-4075-9828-149d8b4240b8</wsa:Address></wsa:From></soap:Header><soap:Body><pri:SendDocumentRequest><pri:JobId>2</pri:JobId><pri:DocumentDescription><pri:DocumentId>1</pri:DocumentId><pri:Compression>None</pri:Compression><pri:Format>unknown</pri:Format></pri:DocumentDescription><pri:LastDocument>true</pri:LastDocument><pri:DocumentData><xop:Include href="cid:0@body"></xop:Include></pri:DocumentData></pri:SendDocumentRequest></soap:Body></soap:Envelope>
+ae
+
+--421cf70c-d50c-49a4-8251-3123314d8caa-76e66ba6-2b2d-4dfd-b40a-d8f01ca0c
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: binary
+Content-ID:<0@body>
+
+
+4a0c
+12345X@PJL JOB
+@PJL SET TOTALPAGENUMBER= 1 
+@PJL SET STRINGCODESET=UTF8
+4c
+
+--421cf70c-d50c-49a4-8251-3123314d8caa-76e66ba6-2b2d-4dfd-b40a-d8f01ca0c--
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[POST /43002 HTTP/1.1
+Cache-Control: no-cache
+Connection: Keep-Alive
+Pragma: no-cache
+Transfer-Encoding: chunked
+Content-Type: Multipart/Related;boundary=aaf08b6b-6e94-431c-9fc7-aa24bcfe8d43-1fbfb12e-50ba-4522-9ceb-3b494bd45;type="application/xop+xml";start="<soap@soap>";start-info="application/soap+xml"
+User-Agent: WSDAPI
+MIME-Version: 1.0
+Content-Description: WSDAPI MIME multipart
+Host: 192.168.5.48:43002
+
+]
+
+  recv http buf:
+[d5
+--aaf08b6b-6e94-431c-9fc7-aa24bcfe8d43-1fbfb12e-50ba-4522-9ceb-3b494bd45
+Content-Type: application/xop+xml;charset=UTF-8;type="application/soap+xml"
+Content-Transfer-Encoding: binary
+Content-ID: <soap@soap>
+
+]
+
+  recv http buf:
+[
+4e8
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:UNS1="http://www.microsoft.com/windows/test/testdevice/11/2005" xmlns:pri="http://schemas.microsoft.com/windows/2006/08/wdp/print" xmlns:xop="http://www.w3.org/2004/08/xop/include"><soap:Header><wsa:To>http://192.168.5.48:43002/43002</wsa:To><wsa:Action>http://schemas.microsoft.com/windows/2006/08/wdp/print/SendDocument</wsa:Action><wsa:MessageID>urn:uuid:04b5bb5d-6ff6-44b5-8b2e-f67c9d2c5f55</wsa:MessageID><wsa:ReplyTo><wsa:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:Address></wsa:ReplyTo><wsa:From><wsa:Address>urn:uuid:8f5e1101-3c35-4874-9ebc-f74acbcc3e66</wsa:Address></wsa:From><UNS1:ServiceIdentifier>uri:prn</UNS1:ServiceIdentifier></soap:Header><soap:Body><pri:SendDocumentRequest><pri:JobId>1</pri:JobId><pri:DocumentDescription><pri:DocumentId>1</pri:DocumentId><pri:Compression>None</pri:Compression><pri:Format>unknown</pri:Format></pri:DocumentDescription><pri:LastDocument>true</pri:LastDocument><pri:DocumentData><xop:Include href="cid:0@body"></xop:Include></pri:DocumentData></pri:SendDocumentRequest></soap:Body></soap:Envelope>
+ae
+
+]
+
+  recv http buf:
+[--aaf08b6b-6e94-431c-9fc7-aa24bcfe8d43-1fbfb12e-50ba-4522-9ceb-3b494bd45
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: binary
+Content-ID:<0@body>
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+POST /43002 HTTP/1.1
+Cache-Control: no-cache
+Connection: Keep-Alive
+Pragma: no-cache
+Transfer-Encoding: chunked
+Content-Type: Multipart/Related;boundary=131a4708-c250-4148-93f4-76f54b3e2103-64f8c754-788e-410a-8207-bdc0a8fcf;type="application/xop+xml";start="<soap@soap>";start-info="application/soap+xml"
+User-Agent: WSDAPI
+MIME-Version: 1.0
+Content-Description: WSDAPI MIME multipart
+Host: 192.168.5.48:43002
+
+d5
+--131a4708-c250-4148-93f4-76f54b3e2103-64f8c754-788e-410a-8207-bdc0a8fcf
+Content-Type: application/xop+xml;charset=UTF-8;type="application/soap+xml"
+Content-Transfer-Encoding: binary
+Content-ID: <soap@soap>
+
+
+4e9
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:UNS1="http://www.microsoft.com/windows/test/testdevice/11/2005" xmlns:pri="http://schemas.microsoft.com/windows/2006/08/wdp/print" xmlns:xop="http://www.w3.org/2004/08/xop/include"><soap:Header><wsa:To>http://192.168.5.48:43002/43002</wsa:To><wsa:Action>http://schemas.microsoft.com/windows/2006/08/wdp/print/SendDocument</wsa:Action><wsa:MessageID>urn:uuid:d5b4386a-4b9a-47e9-878c-28bd651f9c6c</wsa:MessageID><wsa:ReplyTo><wsa:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:Address></wsa:ReplyTo><wsa:From><wsa:Address>urn:uuid:41eb7876-d30d-4a83-bdc3-94125cd19f8c</wsa:Address></wsa:From><UNS1:ServiceIdentifier>uri:prn</UNS1:ServiceIdentifier></soap:Header><soap:Body><pri:SendDocumentRequest><pri:JobId>39</pri:JobId><pri:DocumentDescription><pri:DocumentId>1</pri:DocumentId><pri:Compression>None</pri:Compression><pri:Format>unknown</pri:Format></pri:DocumentDescription><pri:LastDocument>true</pri:LastDocument><pri:DocumentData><xop:Include href="cid:0@body"></xop:Include></pri:DocumentData></pri:SendDocumentRequest></soap:Body></soap:Envelope>
+ae
+
+--131a4708-c250-4148-93f4-76f54b3e2103-64f8c754-788e-410a-8207-bdc0a8fcf
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: binary
+Content-ID:<0@body>
+
+
+10000
+{"id": 1, "method": "print-job", "params": {"copies": 1, "media-size": 1007, "orientation": 0}}%PDF-1.7
+%PCLm 1.0
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/Resources <<
+/XObject <<
+/Image0 5 0 R
+/Image1 6 0 R
+/Image2 7 0 R
+/Image3 8 0 R
+/Image4 9 0 R
+/Image5 10 0 R
+/Image6 11 0 R
+/Image7 12 0 R
+/Image8 13 0 R
+/Image9 14 0 R
+/Image10 15 0 R
+/Image11 16 0 R
+/Image12 17 0 R
+/Image13 18 0 R
+/Image14 19 0 R
+/Image15 20 0 R
+/Image16 21 0 R
+/Image17 22 0 R
+/Image18 23 0 R
+/Image19 24 0 R
+/Image20 25 0 R
+/Image21 26 0 R
+/Image22 27 0 R
