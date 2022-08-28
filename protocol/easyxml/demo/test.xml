@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<env:Envelope>
+    <Header>
+        <MessageID>87adc205-1dd2</MessageID>
+        <To>schemas-xmlsoap-org</To>
+        <Action>http://schemas</Action>
+        <AppSequence InstanceId="1599575162" MessageNumber="0"/>
+    </Header>
+    <Body>
+        <Hello>
+            <EndpointReference>
+                <Address>uuid:87adc205-1dd2-11b2-8459-98df82014343</Address>
+            </EndpointReference>
+            <Types>Device</Types>
+            <MetadataVersion>1.5556</MetadataVersion>
+        </Hello>
+    </Body>
+</env:Envelope>
