@@ -195,7 +195,7 @@ static PWSEVTSUBS del_subscribe_event_byEvcode(PWSEVTSUBS eventLink, WSDEVENT ev
     return eventLink;
 }
 
-static PWSEVTSUBS del_subscribe_event_byIp(PWSEVTSUBS eventLink, char *address)
+static PWSEVTSUBS del_subscribe_event_byIp(PWSEVTSUBS eventLink, PWSEVTSUBS *linktail, char *address)
 {
     PWSEVTSUBS  tmp = eventLink;
     PWSEVTSUBS  ptr = eventLink;
@@ -239,15 +239,18 @@ static PWSEVTSUBS del_subscribe_event_byIp(PWSEVTSUBS eventLink, char *address)
                     else
                     {
                         tmp = tmp->next;
+						*linktail = tmp;
                     }
                 }
                 else
                 {
+					*linktail = tmp;
                     break;
                 }
             }
         }
     }
+
     return eventLink;
 }
 
@@ -308,21 +311,24 @@ int main()
 	init_subscribe_event(&printerEventHead);
     add_subscribe_printer_event(evtPrinterChanged, "192.168.1.1", 1111);
 	add_subscribe_printer_event(evtPrinterStatus, "192.168.1.2", 2222);
-	add_subscribe_printer_event(evtPrinterChanged, "192.168.1.3", 3333);
-	add_subscribe_printer_event(evtPrinterStatus, "192.168.1.4", 4444);
-	add_subscribe_printer_event(evtPrinterChanged, "192.168.1.5", 5555);
+	//add_subscribe_printer_event(evtPrinterChanged, "192.168.1.3", 3333);
+	//add_subscribe_printer_event(evtPrinterStatus, "192.168.1.4", 4444);
+	//add_subscribe_printer_event(evtPrinterChanged, "192.168.1.5", 5555);
 
 	tmpEvent = printerEventHead;
     print_node(tmpEvent);
 	
 	//del_subscribe_event_byEvcode(printerEventHead, evtPrinterChanged);
-	del_subscribe_event_byIp(printerEventHead, "192.168.1.2");
-	del_subscribe_event_byIp(printerEventHead, "192.168.1.4");
+	del_subscribe_event_byIp(printerEventHead, &printerEventTail, "192.168.1.2");
+	del_subscribe_event_byIp(printerEventHead, &printerEventTail, "192.168.1.3");
 	//destroy(printerEventHead);
 	
 	printf("-----------del end----------\n");
 	print_node(tmpEvent);
+	add_subscribe_printer_event(evtPrinterStatus, "192.168.1.8", 8888);
+	add_subscribe_printer_event(evtPrinterChanged, "192.168.1.9", 9999);
 	printf("-----------print specific----------\n");
-	print_specific(evtPrinterChanged, tmpEvent);
+	//print_specific(evtPrinterChanged, tmpEvent);
+	print_node(tmpEvent);
     return 0;
 }
